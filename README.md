@@ -25,7 +25,6 @@ Show stats on the following:
 
 API DOCS
 -----------------
- 
 1. Use the following endpoint to register a token:
  
 POST: https://api.supermetrics.com/assignment/register
