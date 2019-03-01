@@ -2,7 +2,6 @@
   "require": {
     "monolog/monolog": "^1.24",
     "zendframework/zend-http": "^2.10",
-    "zendframework/zend-config": "^3.2",
     "doctrine/cache": "^1.8"
   },
   "autoload": {
