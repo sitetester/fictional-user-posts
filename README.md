@@ -58,7 +58,7 @@ RETURNS:
 - posts : 100 posts per page
 
 
-##Project Setup
+## Project Setup
 Open a terminal window and run these commands
 - `composer install` (installs dependencies) 
 - php -S localhost:8000 (development web server)
