@@ -41,7 +41,7 @@ class BaseTestCase extends TestCase
 
     private function getSamplePosts(): array
     {
-        $fetchedPosts = [
+        $samplePosts = [
             // Feb - 8th & 7th week posts by user1 & user2
             [
                 'id' => 'post1',
@@ -137,6 +137,6 @@ class BaseTestCase extends TestCase
             // averageCharacterLengthPerPostPerMonth = 20 + 21 + 22 + 24 + 26 / 5 = 22.6
         ];
 
-        return $fetchedPosts;
+        return $samplePosts;
     }
 }
