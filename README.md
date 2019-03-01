@@ -57,3 +57,12 @@ RETURNS:
 - page : What page was requested or retrieved
 - posts : 100 posts per page
 
+
+##Project Setup
+Open a terminal window and run these commands
+- `composer install` (installs dependencies) 
+- php -S localhost:8000 (development web server)
+
+## Unit tests
+- Simply run `phpunit` in terminal window to run all unit tests
+
