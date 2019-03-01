@@ -22,21 +22,21 @@ Show stats on the following:
 - Place on a github/bitbucket/gitlab repo that we can access, you can use a public repo OR
 - Zip or Tar the files into an archive and send it along to us by email OR
 - Place in a Dropbox that we can access.
- 
- 
+
 API DOCS
-============
+-----------------
  
 1. Use the following endpoint to register a token:
  
 POST: https://api.supermetrics.com/assignment/register
- 
+
 PARAMS:
+
  
 client_id : ju16a6m81mhid5ue1z3v2g0uh
 email : your@email.address
 name : Your Name
- 
+
 RETURNS
  
 - sl_token : This token string should be used in the subsequent query. Please note that this token will only last 1 hour from when the REGISTER call happens. You will need to register and fetch a new token as you need it.
@@ -47,7 +47,7 @@ RETURNS
 2. Use the following endpoint to fetch posts:
  
 GET: https://api.supermetrics.com/assignment/posts
- 
+
 PARAMS:
  
 - sl_token : Token from the register call
