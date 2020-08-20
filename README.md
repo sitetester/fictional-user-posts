@@ -32,7 +32,7 @@ POST: https://api.supermetrics.com/assignment/register
 PARAMS:
 
  
-client_id : ju16a6m81mhid5ue1z3v2g0uh
+client_id : 
 email : your@email.address
 name : Your Name
 
