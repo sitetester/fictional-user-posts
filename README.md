@@ -13,15 +13,6 @@ Show stats on the following:
 - Total posts split by week
 - Average number of posts per user / month
 
-3. Design the above to be generic, extendable and easy to maintain by other staff members.
- 
-4. You do not need to create any HTML pages for the display of the data. JSON output of the stats is sufficient.
-
-5. Return the assignment in any of the following ways:
-- Use the custom link in the bottom of this email OR
-- Place on a github/bitbucket/gitlab repo that we can access, you can use a public repo OR
-- Zip or Tar the files into an archive and send it along to us by email OR
-- Place in a Dropbox that we can access.
 
 API DOCS
 -----------------
@@ -32,7 +23,7 @@ POST: https://api.supermetrics.com/assignment/register
 PARAMS:
 
  
-client_id : ju16a6m81mhid5ue1z3v2g0uh
+client_id : xxx
 email : your@email.address
 name : Your Name
 

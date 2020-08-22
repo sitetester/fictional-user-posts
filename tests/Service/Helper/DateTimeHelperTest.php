@@ -5,7 +5,7 @@ use App\Service\Helper\DateTimeHelper;
 
 class DateTimeHelperTest extends \tests\BaseTestCase
 {
-    private $dateTimeHelper;
+    private DateTimeHelper $dateTimeHelper;
 
     public function setUp(): void
     {

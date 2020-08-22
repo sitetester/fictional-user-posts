@@ -1,13 +1,11 @@
 <?php
 declare(strict_types=1);
 
-use App\Service\Post\Stats\PerMonth\PerPost\AverageCharacterLengthPerPostPerMonthProvider;
 use tests\BaseTestCase;
 
 class AverageCharacterLengthPerPostPerMonthProviderTest extends BaseTestCase
 {
-    /** @var AverageCharacterLengthPerPostPerMonthProvider */
-    private $averageCharacterLengthPerPostPerMonthProvider;
+    private object $averageCharacterLengthPerPostPerMonthProvider;
 
     public function setUp(): void
     {
@@ -24,7 +22,7 @@ class AverageCharacterLengthPerPostPerMonthProviderTest extends BaseTestCase
             $this->getSampleFetchedPosts()
         );
 
-        self::assertEquals($averageCharacterLengthPerPostPerMonth['Feb'], 16.5);
-        self::assertEquals($averageCharacterLengthPerPostPerMonth['Jan'], 22.6);
+        self::assertEquals(16.5, $averageCharacterLengthPerPostPerMonth['Feb']);
+        self::assertEquals(22.6, $averageCharacterLengthPerPostPerMonth['Jan']);
     }
 }

@@ -8,8 +8,7 @@ use tests\BaseTestCase;
 
 class WeeklyPostsProviderTest extends BaseTestCase
 {
-    /** @var WeeklyPostsProvider */
-    private $weeklyPostsProvider;
+    private WeeklyPostsProvider $weeklyPostsProvider;
 
     public function setUp(): void
     {

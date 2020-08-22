@@ -5,23 +5,13 @@ namespace App\Entity;
 
 class Post
 {
-    /** @var string */
-    private $id;
+    private string $id;
+    private string $fromName;
+    private string $fromId;
+    private string $message;
+    private string $type;
 
-    /** @var string */
-    private $fromName;
-
-    /** @var string */
-    private $fromId;
-
-    /** @var string */
-    private $message;
-
-    /** @var string */
-    private $type;
-
-    /** @var \DateTimeInterface */
-    private $createdTime;
+    private \DateTimeInterface $createdTime;
 
     public function getId(): string
     {
@@ -94,6 +84,5 @@ class Post
 
         return $this;
     }
-
 
 }

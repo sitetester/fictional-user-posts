@@ -15,11 +15,8 @@ use PHPUnit\Framework\TestCase;
  */
 class BaseTestCase extends TestCase
 {
-    /** @var ServiceContainer $container */
-    protected $container;
-
-    /** @var PostsFetcher */
-    private $postsFetcher;
+    protected ServiceContainer $container;
+    private PostsFetcher $postsFetcher;
 
     public function setUp(): void
     {
@@ -41,7 +38,7 @@ class BaseTestCase extends TestCase
 
     private function getSamplePosts(): array
     {
-        $samplePosts = [
+        return [
             // Feb - 8th & 7th week posts by user1 & user2
             [
                 'id' => 'post1',
@@ -49,7 +46,7 @@ class BaseTestCase extends TestCase
                 'from_id' => 'user1',
                 'from_name' => 'test user1',
                 'type' => 'status',
-                'created_time' => '2019-02-19T12:01:37+00:00'
+                'created_time' => '2019-02-19T12:01:37+00:00',
             ],
             [
                 'id' => 'post2',
@@ -136,7 +133,5 @@ class BaseTestCase extends TestCase
             ]
             // averageCharacterLengthPerPostPerMonth = 20 + 21 + 22 + 24 + 26 / 5 = 22.6
         ];
-
-        return $samplePosts;
     }
 }

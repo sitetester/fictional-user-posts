@@ -13,12 +13,12 @@ use Zend\Http\Request;
 class PostsFetcher
 {
     private const POSTS_CACHE_KEY = 'allPosts';
-    private $cache;
-    private $params;
-    private $tokenProvider;
-    private $client;
-    private $postsDenormalizer;
-    private $logger;
+    private CacheProvider $cache;
+    private array $params;
+    private TokenProvider $tokenProvider;
+    private Client $client;
+    private PostsDenormalizer $postsDenormalizer;
+    private LoggerInterface $logger;
 
     public function __construct(
         CacheProvider $cache,
@@ -75,7 +75,7 @@ class PostsFetcher
                 ->setUri($this->params['url'] . '?sl_token=' . $slToken . '&page=' . $page)
         );
 
-        $decodedData = json_decode($response->getBody(), true);
+        $decodedData = json_decode($response->getBody(), true, 512, JSON_THROW_ON_ERROR);
         if (isset($decodedData['error'])) {
             $this->logger->debug('Error while fetching posts', $decodedData['error']);
             if ($decodedData['error']['message'] === 'Invalid SL Token') {

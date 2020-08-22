@@ -8,8 +8,7 @@ use tests\BaseTestCase;
 
 class TokenProviderTest extends BaseTestCase
 {
-    /** @var TokenProvider */
-    private $tokenProvider;
+    private TokenProvider $tokenProvider;
 
     public function setUp(): void
     {

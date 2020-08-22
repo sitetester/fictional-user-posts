@@ -6,8 +6,7 @@ use tests\BaseTestCase;
 
 class MonthlyPostsProviderTest extends BaseTestCase
 {
-    /** @var MonthlyPostsProvider */
-    private $monthlyPostsProvider;
+    private MonthlyPostsProvider $monthlyPostsProvider;
 
     public function setUp(): void
     {

@@ -10,7 +10,7 @@ use tests\BaseTestCase;
 
 class AverageNumberOfPostsPerUserPerMonthProviderTest extends BaseTestCase
 {
-    private $averageNumberOfPostsPerUserPerMonthProvider;
+    private AverageNumberOfPostsPerUserPerMonthProvider $averageNumberOfPostsPerUserPerMonthProvider;
 
     public function setUp(): void
     {

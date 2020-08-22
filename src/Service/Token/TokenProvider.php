@@ -12,9 +12,9 @@ class TokenProvider
 {
     private const TOKEN_PATH = 'var/data/token.log';
     private const TOKEN_SEPARATOR = '<=>';
-    private $params;
-    private $client;
-    private $dateTimeHelper;
+    private array $params;
+    private Client $client;
+    private DateTimeHelper $dateTimeHelper;
 
     public function __construct(
         array $params,
@@ -68,7 +68,7 @@ class TokenProvider
                 ->setPost(new Parameters($this->params['params']))
         );
 
-        $responseData = json_decode($response->getBody(), true);
+        $responseData = json_decode($response->getBody(), true, 512, JSON_THROW_ON_ERROR);
         if (isset($responseData['error'])) {
             return null;
         }
