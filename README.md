@@ -23,7 +23,11 @@ POST: https://api.supermetrics.com/assignment/register
 PARAMS:
 
  
+<<<<<<< HEAD
 client_id : xxx
+=======
+client_id : 
+>>>>>>> 346730df26fb1fedd9dbf9e4808d1756e1a4e075
 email : your@email.address
 name : Your Name
 
